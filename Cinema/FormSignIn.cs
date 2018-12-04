@@ -54,7 +54,7 @@ namespace Cinema
             tBCode.Text = "Your code is : " + person.GetCode;
             tBPercent.Text = "Your advantage is : " + person.Percent + "%";
         }
-        private void CheckInput(TextBox tb)
+      private static void CheckInput(TextBox tb)
         {
             string pattern = @"^\d*,?\d*$";
             Match mc = Regex.Match(tb.Text, pattern);

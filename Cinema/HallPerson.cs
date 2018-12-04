@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace Cinema
 {
     [Serializable]
-   // [DataContract]
+    [DataContract]
     public class HallPerson : Base<HallPerson>
     {
-     //   [DataMember(Name = "PersonId")]
+     [DataMember(Name = "PersonId")]
         private Guid _personId;
-       // [DataMember(Name = "HallId")]
+      [DataMember(Name = "HallId")]
         private Guid _hallId;
 
         public Hall Hall

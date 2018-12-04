@@ -25,12 +25,7 @@ namespace Cinema
             
         }
 
-
-
-        //private static string CreatingImageName
-        //{
-          
-        //}
+      
 
         ~Film()
         {

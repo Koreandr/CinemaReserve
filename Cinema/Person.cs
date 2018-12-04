@@ -10,16 +10,16 @@ using System.Runtime.Serialization;
 namespace Cinema
 {
     [Serializable]
-    // [DataContract]
+     [DataContract]
     public class Person : Base<Person>
     {
-        //  [DataMember]
+        [DataMember]
         public string Name { get; set; }
-        // [DataMember]
-        public string Surname { get; set; }
-        //  [DataMember]
+         [DataMember]
+       public string Surname { get; set; }
+        [DataMember]
         public DateTime dataYear { get; set; }
-        // [DataMember]
+        [DataMember]
         public string PreferentialСode { get; set; }
 
         public enum Advantages

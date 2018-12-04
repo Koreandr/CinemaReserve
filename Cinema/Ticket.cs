@@ -8,5 +8,6 @@ namespace Cinema
 {
    public class Ticket
     {
+        public DateTime datebuy { get { return DateTime.Now; } }
     }
 }

@@ -13,7 +13,7 @@ namespace Cinema
     public partial class FormFilmAbout : Form
     {
         FormTicketCheck check;
-        List<Square> list = new List<Square>()
+        List<Square> list = new List<Square>();
         public FormFilmAbout()
         {
             InitializeComponent();
@@ -23,6 +23,18 @@ namespace Cinema
         {
             FormFinishTicket newForm = new FormFinishTicket();
             newForm.Show();
+        }
+        public double Code(string x)
+        {
+            double percent = 0;
+            string z;
+            foreach (var item in Person.Items.Values)
+            {
+                z = item.GetCode.ToString();
+                if (x == z)
+                    percent = item.Percent;
+            }
+            return percent;
         }
 
         private void FormFilmAbout_Load(object sender, EventArgs e)

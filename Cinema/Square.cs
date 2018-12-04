@@ -10,7 +10,7 @@ namespace Cinema
 {
     class Square : Control
     {
-        int huy;
+   
         public Color color { get; set; }
         public int Index { get; set; }
         private int w { get; set; }

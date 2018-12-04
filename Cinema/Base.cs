@@ -9,17 +9,12 @@ using System.Xml;
 namespace Cinema
 {
     //[DataContract]
-    //[KnownType(typeof(Person))]
-    //[KnownType(typeof(CinemaAdmin))]
-    //[KnownType(typeof(Film))]
-    //[KnownType(typeof(SessionFilm))]
+    //[KnownType(typeof(Person))]   
+    //[KnownType(typeof(Film))]    
     //[KnownType(typeof(Hall))]
     //[KnownType(typeof(HallPerson))]
-    //[KnownType(typeof(HallPlace))]
-    //[KnownType(typeof(HallWithAddition))]
-    //[KnownType(typeof(HallWithFeatures))]
-    //[KnownType(typeof(Ticket))]
-    //[KnownType(typeof(PersonTicket))]
+    //[KnownType(typeof(HallPlace))]    
+    //[KnownType(typeof(Ticket))]   
     //[KnownType(typeof(HallSector))]
     public class Base<T> where T : Base<T>
     {

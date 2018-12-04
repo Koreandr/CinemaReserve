@@ -8,8 +8,7 @@ namespace Cinema
 {
     public class Hall : Base<Hall>
     {
-        public string Name { get; set; }
-        public string Image { get; set; }        
+        public string Name { get; set; }             
         private Guid _IdFilm { get; set; }
         public Guid DelId { get; set; }
          public List<Film> films

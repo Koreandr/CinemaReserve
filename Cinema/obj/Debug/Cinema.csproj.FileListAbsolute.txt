@@ -12,3 +12,17 @@ C:\Users\Админ\Desktop\ООП\Сinema\Cinema\Cinema\obj\Debug\Cinema.FormFi
 C:\Users\Админ\Desktop\ООП\Сinema\Cinema\Cinema\obj\Debug\Cinema.FormSignIn.resources
 C:\Users\Админ\Desktop\ООП\Сinema\Cinema\Cinema\obj\Debug\Cinema.FormFinishTicket.resources
 C:\Users\Админ\Desktop\ООП\Сinema\Cinema\Cinema\obj\Debug\Cinema.FormTicketCheck.resources
+C:\Users\Админ\Desktop\CinemaReserve\Cinema\obj\Debug\Cinema.csprojAssemblyReference.cache
+C:\Users\Админ\Desktop\CinemaReserve\Cinema\obj\Debug\Cinema.FormBuyTickets.resources
+C:\Users\Админ\Desktop\CinemaReserve\Cinema\obj\Debug\Cinema.FormFilmAbout.resources
+C:\Users\Админ\Desktop\CinemaReserve\Cinema\obj\Debug\Cinema.FormFinishTicket.resources
+C:\Users\Админ\Desktop\CinemaReserve\Cinema\obj\Debug\Cinema.FormSignIn.resources
+C:\Users\Админ\Desktop\CinemaReserve\Cinema\obj\Debug\Cinema.FormTicketCheck.resources
+C:\Users\Админ\Desktop\CinemaReserve\Cinema\obj\Debug\Cinema.Properties.Resources.resources
+C:\Users\Админ\Desktop\CinemaReserve\Cinema\obj\Debug\Cinema.csproj.GenerateResource.cache
+C:\Users\Админ\Desktop\CinemaReserve\Cinema\obj\Debug\Cinema.csproj.CoreCompileInputs.cache
+C:\Users\Админ\Desktop\CinemaReserve\Cinema\obj\Debug\Cinema.exe
+C:\Users\Админ\Desktop\CinemaReserve\Cinema\obj\Debug\Cinema.pdb
+C:\Users\Админ\Desktop\CinemaReserve\Cinema\bin\Debug\Cinema.exe.config
+C:\Users\Админ\Desktop\CinemaReserve\Cinema\bin\Debug\Cinema.exe
+C:\Users\Админ\Desktop\CinemaReserve\Cinema\bin\Debug\Cinema.pdb
