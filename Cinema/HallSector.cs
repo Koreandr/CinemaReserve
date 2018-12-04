@@ -9,22 +9,22 @@ using System.Drawing;
 namespace Cinema
 {
     [Serializable]
-   // [DataContract]
+    [DataContract]
     public class HallSector : Base<HallSector>
     {
-        //[DataMember]
+        [DataMember]
         public int Price { get; set; }
-       // [DataMember]
+        [DataMember]
         public int From { get; set; }
-      //  [DataMember]
+        [DataMember]
         public int To { get; set; }
-      //  [DataMember]
+        [DataMember]
         public string Name { get; set; }
-       // [DataMember(Name = "HallId")]
+        [DataMember(Name = "HallId")]
         private Guid _IdHall { get; set; }
-       // [DataMember(Name = "PlaceId")]
+        [DataMember(Name = "PlaceId")]
         private Guid _idPlace { get; set; }
-       // [DataMember]
+        [DataMember]
         public Color Color { get; set; }
 
         public HallSector(int price, string name, int from, int to)

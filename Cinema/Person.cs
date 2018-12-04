@@ -21,6 +21,8 @@ namespace Cinema
         public DateTime dataYear { get; set; }
         [DataMember]
         public string PreferentialСode { get; set; }
+        [DataMember(Name = "FilmId")]
+        private Guid _IdFilm { get; set; }
 
         public enum Advantages
         {
@@ -116,8 +118,33 @@ namespace Cinema
                 return code;
             }
         }
-         //public List<Hall>{}
-         //public List<Ticket>{}
+        public List<Hall> Halls
+        {
+            get
+            {
+                var element = new List<Hall>();
+                foreach (var item in HallPerson.Items.Values)
+                {
+                    if (item.Person == this)
+                        element.Add(item.Hall);
+                }
+                return element;
+            }
+        }
+
+        public List<Ticket> Tickets
+        {
+            get
+            {
+                var element = new List<Ticket>();
+                foreach (var item in PersonTicket.Items.Values)
+                {
+                    if (item.Person == this)
+                        element.Add(item.Ticket);
+                }
+                return element;
+            }
+        }
 
     }
 }

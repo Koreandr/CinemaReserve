@@ -10,12 +10,15 @@ namespace Cinema
 {
     [DataContract]
     [KnownType(typeof(Person))]
-    //[KnownType(typeof(Film))]
-    //[KnownType(typeof(Hall))]
-    //[KnownType(typeof(HallPerson))]
-    //[KnownType(typeof(HallPlace))]
-    //[KnownType(typeof(Ticket))]
-    //[KnownType(typeof(HallSector))]
+    [KnownType(typeof(PersonTicket))]
+    // [KnownType(typeof(Film))]
+    // [KnownType(typeof(Hall))]
+    [KnownType(typeof(HallPerson))]
+    [KnownType(typeof(HallPlace))]
+    [KnownType(typeof(HallSector))]
+    [KnownType(typeof(Ticket))]
+    [KnownType(typeof(HallAdding))]
+    [KnownType(typeof(HallSpace))]
     public class Base<T> where T : Base<T>
     {
         public static Dictionary<Guid, T> Items = new Dictionary<Guid, T>();

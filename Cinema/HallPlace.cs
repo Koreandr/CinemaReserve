@@ -8,12 +8,12 @@ using System.Runtime.Serialization;
 namespace Cinema
 {
     [Serializable]
-    // [DataContract]
+     [DataContract]
     public class HallPlace : Base<HallPlace>
     {
-      //  [DataMember]
+       [DataMember]
         public int Place { get; set; }
-    //    [DataMember]
+      [DataMember]
         public bool IsSold { get; set; }
 
         public HallPlace(int place, bool isSold, Guid id)
@@ -23,7 +23,7 @@ namespace Cinema
             this.IdSector = id;
         }
 
-      //  [DataMember(Name = "SectorId")]
+        [DataMember(Name = "SectorId")]
         public Guid IdSector { get; set; }
 
         public HallSector HallSector

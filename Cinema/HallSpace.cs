@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 using System.Runtime.Serialization;
 namespace Cinema
 {
+    [Serializable]
+    [DataContract]
     public class HallSpace : Hall
     {
+        [DataMember]
         public Space Space { get; set; }
     }
    public enum Space { HD, TwoD, ThreeD, FourD }
