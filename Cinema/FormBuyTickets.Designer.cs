@@ -85,6 +85,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormBuyTickets";
             this.Text = "BuyTickets";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormBuyTickets_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

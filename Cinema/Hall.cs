@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Cinema
 {
-    public class Hall : Base<Hall>
+    public class Hall : Base<Hall>, IEnumerable
     {
         public string Name { get; set; }             
         private Guid _IdFilm { get; set; }
@@ -50,6 +51,11 @@ namespace Cinema
         public override string ToString()
         {
             return Name;
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            return films.GetEnumerator();
         }
     }
 }

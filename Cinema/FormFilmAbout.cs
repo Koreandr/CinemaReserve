@@ -21,7 +21,7 @@ namespace Cinema
 
         private void btnBuy_Click(object sender, EventArgs e)
         {
-            FormFinishTicket newForm = new FormFinishTicket();
+            FormTicketCheck newForm = new FormTicketCheck();
             newForm.Show();
         }
         public double Code(string x)

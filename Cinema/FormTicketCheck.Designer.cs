@@ -35,6 +35,7 @@
             this.lblPlace = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblPref = new System.Windows.Forms.Label();
+            this.lblDBuy = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblWelcome
@@ -100,11 +101,22 @@
             this.lblPref.TabIndex = 6;
             this.lblPref.Text = "Preferential:";
             // 
+            // lblDBuy
+            // 
+            this.lblDBuy.AutoSize = true;
+            this.lblDBuy.Location = new System.Drawing.Point(173, 345);
+            this.lblDBuy.Name = "lblDBuy";
+            this.lblDBuy.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblDBuy.Size = new System.Drawing.Size(66, 17);
+            this.lblDBuy.TabIndex = 7;
+            this.lblDBuy.Text = "Data Buy";
+            // 
             // FormTicketCheck
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 450);
+            this.Controls.Add(this.lblDBuy);
             this.Controls.Add(this.lblPref);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblPlace);
@@ -129,5 +141,6 @@
         private System.Windows.Forms.Label lblPlace;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblPref;
+        private System.Windows.Forms.Label lblDBuy;
     }
 }

@@ -36,5 +36,10 @@ namespace Cinema
             FormAboutTheCinema newForm = new FormAboutTheCinema();
             newForm.Show();
         }
+
+        private void FormBuyTickets_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Person.Save();
+        }
     }
 }
