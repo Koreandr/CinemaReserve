@@ -11,8 +11,8 @@ namespace Cinema
     [DataContract]
     [KnownType(typeof(Person))]
     [KnownType(typeof(PersonTicket))]
-    // [KnownType(typeof(Film))]
-    // [KnownType(typeof(Hall))]
+    [KnownType(typeof(Film))]
+    [KnownType(typeof(Hall))]
     [KnownType(typeof(HallPerson))]
     [KnownType(typeof(HallPlace))]
     [KnownType(typeof(HallSector))]
@@ -26,6 +26,7 @@ namespace Cinema
         public Guid Id { get; private set; }
         static public void Load()
         {
+
             DataContractSerializer dcs = new DataContractSerializer(typeof(Dictionary<Guid, T>));
             string fileName = typeof(T).Name + ".xml";
             XmlReader xmlr = XmlReader.Create(fileName);

@@ -27,8 +27,9 @@ namespace Cinema
         public Guid IdPlace { get; set; }
         [DataMember]
         public static int i = 0;
-
-        public Hall Hall
+        
+                        
+public Hall Hall
         {
             get
             {
@@ -74,9 +75,10 @@ namespace Cinema
                 }
             }
         }
+       
         public override string ToString()
         {
-            return "Time Buy" + datebuy.ToString();
+            return "Time Buy:" + datebuy.ToString();
         }
     }
 }
