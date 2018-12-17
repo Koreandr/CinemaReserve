@@ -28,6 +28,13 @@ namespace Cinema
             get
             {
                 var element = new List<Film>();
+                foreach (var item in SessionFilm.Items.Values)
+                {
+                    if (item.Hall == this)
+                    {
+                        element.Add(item.Film);
+                    }
+                }
                 return element;
             }
         }

@@ -50,7 +50,7 @@
             // lblFilm
             // 
             this.lblFilm.AutoSize = true;
-            this.lblFilm.Location = new System.Drawing.Point(170, 97);
+            this.lblFilm.Location = new System.Drawing.Point(173, 142);
             this.lblFilm.Name = "lblFilm";
             this.lblFilm.Size = new System.Drawing.Size(37, 17);
             this.lblFilm.TabIndex = 1;
@@ -59,7 +59,7 @@
             // lblHall
             // 
             this.lblHall.AutoSize = true;
-            this.lblHall.Location = new System.Drawing.Point(173, 144);
+            this.lblHall.Location = new System.Drawing.Point(173, 100);
             this.lblHall.Name = "lblHall";
             this.lblHall.Size = new System.Drawing.Size(36, 17);
             this.lblHall.TabIndex = 2;
@@ -86,7 +86,7 @@
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
-            this.lblPrice.Location = new System.Drawing.Point(173, 260);
+            this.lblPrice.Location = new System.Drawing.Point(173, 259);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(44, 17);
             this.lblPrice.TabIndex = 5;
@@ -95,7 +95,7 @@
             // lblPref
             // 
             this.lblPref.AutoSize = true;
-            this.lblPref.Location = new System.Drawing.Point(170, 309);
+            this.lblPref.Location = new System.Drawing.Point(170, 294);
             this.lblPref.Name = "lblPref";
             this.lblPref.Size = new System.Drawing.Size(85, 17);
             this.lblPref.TabIndex = 6;
@@ -104,7 +104,7 @@
             // lblDBuy
             // 
             this.lblDBuy.AutoSize = true;
-            this.lblDBuy.Location = new System.Drawing.Point(173, 345);
+            this.lblDBuy.Location = new System.Drawing.Point(170, 341);
             this.lblDBuy.Name = "lblDBuy";
             this.lblDBuy.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblDBuy.Size = new System.Drawing.Size(66, 17);
@@ -126,7 +126,6 @@
             this.Controls.Add(this.lblWelcome);
             this.Name = "FormTicketCheck";
             this.Text = "Ticket Check";
-            this.Load += new System.EventHandler(this.FormTicketCheck_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

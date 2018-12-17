@@ -12,7 +12,7 @@ namespace Cinema
     public class Ticket : Base<Ticket>
     {
         [DataMember]
-        public DateTime datebuy { get { return DateTime.Now; } }
+        public DateTime datebuy { get { return DateTime.Now;} }
         [DataMember]
         public double Price { get; set; }
         [DataMember]
@@ -27,9 +27,10 @@ namespace Cinema
         public Guid IdPlace { get; set; }
         [DataMember]
         public static int i = 0;
-        
-                        
-public Hall Hall
+       
+
+
+        public Hall Hall
         {
             get
             {
@@ -52,15 +53,15 @@ public Hall Hall
                 _IdFilm = value.Id;
             }
         }
-        //public Ticket(double price, bool advantage, Hall hall, Film film, Guid id)
-        //{
-        //    this.Hall = hall;
-        //    this.Price = price;
-        //    this.Film = film;
-        //    this.Advantage = advantage;
-        //    this.IdPlace = id;
-        //    i++;
-        //}
+        public Ticket(double price, bool advantage, Hall hall, Film film, Guid id)
+        {
+            this.Hall = hall;
+            this.Price = price;
+            this.Film = film;
+            this.Advantage = advantage;
+            this.IdPlace = id;
+            i++;
+        }
         public string Answer
         {
             get
@@ -75,7 +76,7 @@ public Hall Hall
                 }
             }
         }
-       
+
         public override string ToString()
         {
             return "Time Buy:" + datebuy.ToString();

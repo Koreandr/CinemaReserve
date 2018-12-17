@@ -155,7 +155,7 @@
             // 
             // tBFilm
             // 
-            this.tBFilm.Location = new System.Drawing.Point(964, 118);
+            this.tBFilm.Location = new System.Drawing.Point(964, 128);
             this.tBFilm.Name = "tBFilm";
             this.tBFilm.Size = new System.Drawing.Size(270, 22);
             this.tBFilm.TabIndex = 15;

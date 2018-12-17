@@ -31,6 +31,7 @@ namespace Cinema
 
         [DataMember(Name = "IdBase")]
         public Guid Id { get; private set; }
+
         static public void Load()
         {
 
@@ -54,47 +55,41 @@ namespace Cinema
             var person = JsonConvert.DeserializeObject<Person>(File.ReadAllText("Person.json"));
             File.WriteAllText("Person.json",JsonConvert.SerializeObject(person));
         }
-        //static public void Txt() {
-            
-           
-        //        using (StreamWriter streamWriter = new StreamWriter(txtName))
-        //        {
-        //            foreach (Person user in Base.Txt)
-        //            {
-        //            streamWriter.WriteLine("Пользователь: " + person.Name + Environment.NewLine ;
-                           
-        //            }
-        //        }
-            
-        //}
-        //private void JsonMainDataDeserialize()
-        //{;
-           
-        //    person = JsonConvert.DeserializeObject<Person>(File.ReadAllText(jsonPath));
-
-        //    using (StreamReader streamReader = File.OpenText(jsonPath))
-        //    {
-        //        JsonSerializer serializer = new JsonSerializer();
-
-        //        person = (Person)serializer.Deserialize(streamReader, typeof(Person));
-
-        //        foreach (User user in Person.users)
-        //        {
-        //            ListOfUsers.Items.Add(user.Name);
-        //        }
-
-        //        foreach (User bannedUser in Person.bannedUsers)
-        //        {
-        //            ListOfBannedUsers.Items.Add(bannedUser.Name);
-        //        }
-        //    }
-        //}
-
         public Base()
         {
             Id = Guid.NewGuid();
             Items.Add(Id, (T)this);
         }
     }
-   
+    //static public void Txt() {
+
+
+    //        using (StreamWriter streamWriter = new StreamWriter(txtName))
+    //        {
+    //            foreach (Person user in Base.Txt)
+    //            {
+    //            streamWriter.WriteLine("Пользователь: " + person.Name + Environment.NewLine ;
+
+    //            }
+    //        }
+
+    //}
+    //public void JsonMainDataDeserialize()
+    //{
+    //    ;
+
+    //    person = JsonConvert.DeserializeObject<Person>(File.ReadAllText(jsonPath));
+
+    //    using (StreamReader streamReader = File.OpenText(jsonPath))
+    //    {
+    //        JsonSerializer serializer = new JsonSerializer();
+
+    //        person = (Person)serializer.Deserialize(streamReader, typeof(Person));
+
+
+    //    }
+    //}
+
+
+
 }

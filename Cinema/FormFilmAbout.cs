@@ -395,5 +395,7 @@ namespace Cinema
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+       
     }
 }

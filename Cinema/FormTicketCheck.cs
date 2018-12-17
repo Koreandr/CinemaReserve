@@ -16,8 +16,8 @@ namespace Cinema
         public FormTicketCheck()
         {
             InitializeComponent();
-            Ticket ticket = new Ticket();
-            lblDBuy.Text = ticket.ToString();
+          // Ticket ticket = new Ticket();
+          //lblDBuy.Text = ticket.ToString();
 
             foreach (var item in Ticket.Items.Values)
             {
@@ -47,9 +47,6 @@ namespace Cinema
             }
         }
 
-        private void FormTicketCheck_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

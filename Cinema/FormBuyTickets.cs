@@ -60,6 +60,7 @@ namespace Cinema
             Person.Save();
             Ticket.Save();           
             PersonTicket.Save();
+            Person.Json();
         }
     }
 }

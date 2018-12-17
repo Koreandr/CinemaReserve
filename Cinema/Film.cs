@@ -72,18 +72,31 @@ namespace Cinema
         {
             get
             {
-                var items = new List<Hall>();               
+                var items = new List<Hall>();
+                foreach (var elem in SessionFilm.Items.Values)
+                {
+                    if (elem.Film.Id == this.Id)
+                    {
+                        items.Add(elem.Hall);
+                    }
+                }
                 return items;
             }
         }
-
        
 
         public List<Ticket> Persons
         {
             get
             {
-                var items = new List<Ticket>();               
+                var items = new List<Ticket>();
+                foreach (var elem in Ticket.Items.Values)
+                {
+                    if (elem.Film == this)
+                    {
+                        items.Add(elem);
+                    }
+                }
                 return items;
             }
         }
