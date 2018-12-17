@@ -118,7 +118,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(612, 275);
+            this.label6.Location = new System.Drawing.Point(596, 234);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(263, 32);
             this.label6.TabIndex = 9;
@@ -126,7 +126,7 @@
             // 
             // tBAmountP
             // 
-            this.tBAmountP.Location = new System.Drawing.Point(970, 285);
+            this.tBAmountP.Location = new System.Drawing.Point(964, 244);
             this.tBAmountP.Name = "tBAmountP";
             this.tBAmountP.Size = new System.Drawing.Size(264, 22);
             this.tBAmountP.TabIndex = 10;
@@ -155,7 +155,7 @@
             // 
             // tBFilm
             // 
-            this.tBFilm.Location = new System.Drawing.Point(964, 128);
+            this.tBFilm.Location = new System.Drawing.Point(964, 118);
             this.tBFilm.Name = "tBFilm";
             this.tBFilm.Size = new System.Drawing.Size(270, 22);
             this.tBFilm.TabIndex = 15;
@@ -189,7 +189,7 @@
             this.btnCheck.BackColor = System.Drawing.Color.Maroon;
             this.btnCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnCheck.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCheck.Location = new System.Drawing.Point(840, 219);
+            this.btnCheck.Location = new System.Drawing.Point(807, 272);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(249, 45);
             this.btnCheck.TabIndex = 18;

@@ -336,6 +336,8 @@ namespace Cinema
         {
             double x = 0;
             double z = 0;
+            
+           
             HallPlace place = null;
             if (tBPlace.Text != "" && TbCode.Text != "")
             {
@@ -363,12 +365,21 @@ namespace Cinema
                                 }
                             }
                         }
-                        double k = Code(TbCode.Text);
+                        if (tBAmountP.Text == null)
+                        {
+                            MessageBox.Show("Please select and input all fields", "Etantion",
+                           MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            int g = Int32.Parse(tBAmountP.Text);
+                            double k = Code(TbCode.Text);
                         if (k == 0)
                             z = x;
                         else
-                            z = x * k / 100;
+                            z = g * x * k / 100;
                         tBPrice.Text = z + "UAH";
+                        }
                     }
                     else
                     {
