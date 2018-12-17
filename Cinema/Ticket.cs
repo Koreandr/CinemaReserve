@@ -62,6 +62,14 @@ namespace Cinema
             this.IdPlace = id;
             i++;
         }
+
+        public Ticket(double price, bool advantage)
+        {
+            this.Price = price;
+            this.Advantage = advantage;
+            i++;
+        }
+
         public string Answer
         {
             get

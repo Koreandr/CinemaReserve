@@ -25,8 +25,9 @@ namespace Cinema
             HallPerson.Load();
             Film.Load();
             Person.Load();
-            Ticket.Load();           
+            //Ticket.Load();           
             PersonTicket.Load();
+            SessionFilm.Load();
         }
 
         private void btnRegistration_Click_1(object sender, EventArgs e)
@@ -49,6 +50,9 @@ namespace Cinema
 
         private void FormBuyTickets_FormClosed(object sender, FormClosedEventArgs e)
         {
+            Base<Person>.TextSave();
+            Base<Person>.Json();
+
             Person.Save();            
             Hall.Save();
             HallSector.Save();
@@ -58,9 +62,11 @@ namespace Cinema
             HallPerson.Save();
             Film.Save();
             Person.Save();
-            Ticket.Save();           
+           // Ticket.Save();           
             PersonTicket.Save();
-            Person.Json();
+
+            SessionFilm.Save();
+            
         }
     }
 }

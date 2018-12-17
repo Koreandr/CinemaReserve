@@ -51,45 +51,39 @@ namespace Cinema
             xmlw.Close();
         }
 
-        static public void Json() {
-            var person = JsonConvert.DeserializeObject<Person>(File.ReadAllText("Person.json"));
-            File.WriteAllText("Person.json",JsonConvert.SerializeObject(person));
+        static public void TextSave()
+        {
+            StreamWriter outputFile = new StreamWriter("test.txt");
+            foreach (var item in Person.Items.Values.ToList())
+            {
+                outputFile.WriteLine(item.ToString());
+            }
+            outputFile.Close();
+
         }
+
+       
+
+        static public void Json() {
+            StreamWriter outputFile = new StreamWriter("test.json");
+            foreach (var item in Person.Items.Values.ToList())
+            {
+                var person = JsonConvert.SerializeObject(item);
+                outputFile.WriteLine(person);
+            }
+            outputFile.Close();
+           
+        }
+
+
         public Base()
         {
             Id = Guid.NewGuid();
             Items.Add(Id, (T)this);
         }
     }
-    //static public void Txt() {
-
-
-    //        using (StreamWriter streamWriter = new StreamWriter(txtName))
-    //        {
-    //            foreach (Person user in Base.Txt)
-    //            {
-    //            streamWriter.WriteLine("Пользователь: " + person.Name + Environment.NewLine ;
-
-    //            }
-    //        }
-
-    //}
-    //public void JsonMainDataDeserialize()
-    //{
-    //    ;
-
-    //    person = JsonConvert.DeserializeObject<Person>(File.ReadAllText(jsonPath));
-
-    //    using (StreamReader streamReader = File.OpenText(jsonPath))
-    //    {
-    //        JsonSerializer serializer = new JsonSerializer();
-
-    //        person = (Person)serializer.Deserialize(streamReader, typeof(Person));
-
-
-    //    }
-    //}
 
 
 
-}
+
+    }

@@ -153,5 +153,10 @@ namespace Cinema
             }
         }
 
+        public override string ToString()
+        {
+            return Name + " " + Surname;
+        }
+
     }
 }

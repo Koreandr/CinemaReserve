@@ -39,7 +39,9 @@ namespace Cinema
             
         }
 
-        
+        public Film() { }
+
+
         ~Film()
         {
             try

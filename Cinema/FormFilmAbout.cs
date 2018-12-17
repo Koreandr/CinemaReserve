@@ -255,8 +255,6 @@ namespace Cinema
 
         private void btnBuy_Click_1(object sender, EventArgs e)
         {
-            FormTicketCheck newForm = new FormTicketCheck();
-            newForm.Show();
             HallPlace place = null;
             if (tBPlace.Text != "" && TbCode.Text != "" && tBCard.Text != "")
             {
@@ -287,7 +285,14 @@ namespace Cinema
                                 b = true;
                             }
                         }
-
+                        foreach (var item in SessionFilm.Items.Values)
+                        {
+                            if ((Hall)cBCinema.SelectedItem == item.Hall)
+                            {
+                                Ticket ticket = new Ticket(price, b, item.Hall,
+                                item.Film, place.Id);
+                            }
+                        }
                         Clear();
                         check = new FormTicketCheck();
                         check.ShowDialog();
@@ -323,6 +328,13 @@ namespace Cinema
             foreach (var item in ((Hall)cBCinema.SelectedItem).HallSectors)
             {
                 lst.AddRange(item.HallPlaces);
+            }
+            foreach (var item in SessionFilm.Items.Values)
+            {
+                if (item.Hall == (Hall)cBCinema.SelectedItem)
+                {
+                    tBFilm.Text = item.Film.Name;
+                }
             }
 
         }

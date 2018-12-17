@@ -16,8 +16,8 @@ namespace Cinema
         public FormTicketCheck()
         {
             InitializeComponent();
-          // Ticket ticket = new Ticket();
-          //lblDBuy.Text = ticket.ToString();
+         
+       
 
             foreach (var item in Ticket.Items.Values)
             {
@@ -25,6 +25,7 @@ namespace Cinema
                 if (item == Ticket.Items.Values.Last())
                 {
                     lblPrice.Text = "Price : " + item.Price;
+                    lblDBuy.Text = item.datebuy.ToString();
                     foreach (var elem in item.Hall.HallSectors)
                     {
                         if (elem.Price == item.Price)
