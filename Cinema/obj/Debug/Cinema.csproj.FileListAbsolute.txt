@@ -25,3 +25,7 @@ C:\Users\Админ\Desktop\CinemaReserve\Cinema\obj\Debug\Cinema.pdb
 C:\Users\Админ\Desktop\CinemaReserve\Cinema\bin\Debug\Cinema.exe.config
 C:\Users\Админ\Desktop\CinemaReserve\Cinema\bin\Debug\Cinema.exe
 C:\Users\Админ\Desktop\CinemaReserve\Cinema\bin\Debug\Cinema.pdb
+C:\Users\Админ\Desktop\CinemaReserve\Cinema\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Админ\Desktop\CinemaReserve\Cinema\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Админ\Desktop\CinemaReserve\Cinema\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Админ\Desktop\CinemaReserve\Cinema\obj\Debug\Cinema.csproj.CopyComplete

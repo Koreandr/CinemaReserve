@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.Serialization;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace Cinema
 {
@@ -14,14 +16,19 @@ namespace Cinema
     public class Person : Base<Person>
     {
         [DataMember]
+        [JsonProperty ]
         public string Name { get; set; }
          [DataMember]
-       public string Surname { get; set; }
+        [JsonProperty]
+        public string Surname { get; set; }
         [DataMember]
+        [JsonProperty]
         public DateTime dataYear { get; set; }
         [DataMember]
+        [JsonProperty]
         public string PreferentialСode { get; set; }
         [DataMember(Name = "FilmId")]
+        [JsonProperty("FilmId")]
         private Guid _IdFilm { get; set; }
 
         public enum Advantages

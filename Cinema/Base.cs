@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.Serialization;
 using System.Xml;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace Cinema
 {
@@ -21,8 +23,13 @@ namespace Cinema
     [KnownType(typeof(HallSpace))]
     public class Base<T> where T : Base<T>
     {
+        public string txtName = "Person.txt";
+        Person person;
+
         public static Dictionary<Guid, T> Items = new Dictionary<Guid, T>();
-       [DataMember(Name = "IdBase")]
+        private string jsonPath;
+
+        [DataMember(Name = "IdBase")]
         public Guid Id { get; private set; }
         static public void Load()
         {
@@ -42,6 +49,46 @@ namespace Cinema
             dcs.WriteObject(xmlw, Items);
             xmlw.Close();
         }
+
+        static public void Json() {
+            var person = JsonConvert.DeserializeObject<Person>(File.ReadAllText("Person.json"));
+            File.WriteAllText("Person.json",JsonConvert.SerializeObject(person));
+        }
+        //static public void Txt() {
+            
+           
+        //        using (StreamWriter streamWriter = new StreamWriter(txtName))
+        //        {
+        //            foreach (Person user in Base.Txt)
+        //            {
+        //            streamWriter.WriteLine("Пользователь: " + person.Name + Environment.NewLine ;
+                           
+        //            }
+        //        }
+            
+        //}
+        //private void JsonMainDataDeserialize()
+        //{;
+           
+        //    person = JsonConvert.DeserializeObject<Person>(File.ReadAllText(jsonPath));
+
+        //    using (StreamReader streamReader = File.OpenText(jsonPath))
+        //    {
+        //        JsonSerializer serializer = new JsonSerializer();
+
+        //        person = (Person)serializer.Deserialize(streamReader, typeof(Person));
+
+        //        foreach (User user in Person.users)
+        //        {
+        //            ListOfUsers.Items.Add(user.Name);
+        //        }
+
+        //        foreach (User bannedUser in Person.bannedUsers)
+        //        {
+        //            ListOfBannedUsers.Items.Add(bannedUser.Name);
+        //        }
+        //    }
+        //}
 
         public Base()
         {
