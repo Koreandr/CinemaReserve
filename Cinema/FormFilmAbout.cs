@@ -22,63 +22,7 @@ namespace Cinema
          //   DelOldPeople();
             Clear();
         }
-
-        private void btnBuy_Click(object sender, EventArgs e)
-        {
-            FormTicketCheck newForm = new FormTicketCheck();
-            newForm.Show();
-            HallPlace place = null;
-            if (tBPlace.Text != "" && TbCode.Text != "" && tBCard.Text != "")
-            {
-                foreach (var item in ((Hall)cBCinema.SelectedItem).HallSectors)
-                {
-                    foreach (var elem in item.HallPlaces)
-                    {
-                        if (elem.Place == Int32.Parse(tBPlace.Text))
-                        {
-                            place = elem;
-                            break;
-                        }
-                    }
-                }
-                if (place.IsSold == false)
-                {
-                    if (tBFilm.Text != "")
-                    {
-                        bool b = false;
-                        string z;
-                        double price = place.HallSector.Price;
-                        place.IsSold = true;
-                        foreach (var item in Person.Items.Values)
-                        {
-                            z = item.GetCode.ToString();
-                            if (TbCode.Text == z)
-                            {
-                                b = true;
-                            }
-                        }                        
-                        
-                        Clear();
-                        check = new FormTicketCheck();
-                        check.ShowDialog();
-                    }
-                    else
-                    {
-                        MessageBox.Show("There are any films in this hall", "Sorry",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("This place is already sold");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Please select and input all fields", "Etantion",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
+        
         public void Places()
         {
             if (cBCinema.SelectedItem != null)
@@ -313,6 +257,57 @@ namespace Cinema
         {
             FormTicketCheck newForm = new FormTicketCheck();
             newForm.Show();
+            HallPlace place = null;
+            if (tBPlace.Text != "" && TbCode.Text != "" && tBCard.Text != "")
+            {
+                foreach (var item in ((Hall)cBCinema.SelectedItem).HallSectors)
+                {
+                    foreach (var elem in item.HallPlaces)
+                    {
+                        if (elem.Place == Int32.Parse(tBPlace.Text))
+                        {
+                            place = elem;
+                            break;
+                        }
+                    }
+                }
+                if (place.IsSold == false)
+                {
+                    if (tBFilm.Text != "")
+                    {
+                        bool b = false;
+                        string z;
+                        double price = place.HallSector.Price;
+                        place.IsSold = true;
+                        foreach (var item in Person.Items.Values)
+                        {
+                            z = item.GetCode.ToString();
+                            if (TbCode.Text == z)
+                            {
+                                b = true;
+                            }
+                        }
+
+                        Clear();
+                        check = new FormTicketCheck();
+                        check.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("There are any films in this hall", "Sorry",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("This place is already sold");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select and input all fields", "Etantion",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void cBCinema_SelectedIndexChanged_1(object sender, EventArgs e)
