@@ -27,7 +27,7 @@ namespace Cinema
         Person person;
 
         public static Dictionary<Guid, T> Items = new Dictionary<Guid, T>();
-        private string jsonPath;
+       
 
         [DataMember(Name = "IdBase")]
         public Guid Id { get; private set; }
@@ -53,7 +53,7 @@ namespace Cinema
 
         static public void TextSave()
         {
-            StreamWriter outputFile = new StreamWriter("test.txt");
+            StreamWriter outputFile = new StreamWriter("PersonTxt.txt");
             foreach (var item in Person.Items.Values.ToList())
             {
                 outputFile.WriteLine(item.ToString());
@@ -65,7 +65,7 @@ namespace Cinema
        
 
         static public void Json() {
-            StreamWriter outputFile = new StreamWriter("test.json");
+            StreamWriter outputFile = new StreamWriter("PersonJson.json");
             foreach (var item in Person.Items.Values.ToList())
             {
                 var person = JsonConvert.SerializeObject(item);

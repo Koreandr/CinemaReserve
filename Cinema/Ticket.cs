@@ -12,7 +12,7 @@ namespace Cinema
     public class Ticket : Base<Ticket>
     {
         [DataMember]
-        public DateTime datebuy { get { return DateTime.Now;} }
+        public  DateTime datebuy { get { return DateTime.Now;} }         
         [DataMember]
         public double Price { get; set; }
         [DataMember]
@@ -24,7 +24,7 @@ namespace Cinema
         [DataMember(Name = "FilmID")]
         private Guid _IdFilm { get; set; }
         [DataMember]
-        public Guid IdPlace { get; set; }
+        public readonly Guid IdPlace;
         [DataMember]
         public static int i = 0;
        

@@ -155,7 +155,7 @@ namespace Cinema
 
         public override string ToString()
         {
-            return Name + " " + Surname;
+            return "Name:"+Name + "  Surname" + Surname+"   DataYear:"+ dataYear+ " PreferentialСode:" + PreferentialСode;
         }
 
     }

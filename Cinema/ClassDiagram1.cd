@@ -3,35 +3,29 @@
   <Class Name="Cinema.Base&lt;T&gt;" Collapsed="true">
     <Position X="7.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAgIAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACgIAAAAAACAAAAAAAAAAAAAACAAAAAAAAAACAAgQ=</HashCode>
       <FileName>Base.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Cinema.Hall" Collapsed="true">
     <Position X="7.75" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAgAAAAAAAAAAEAAAAAAQEAIAAABAAAACAAAAAAAA=</HashCode>
+      <HashCode>EAQAgAAAAAAAABAEAAAAAAQEAIABABAAAACAAAEAAAA=</HashCode>
       <FileName>Hall.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Cinema.HallAdding" Collapsed="true">
     <Position X="5" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAAAEAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAEQAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>HallAdding.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Cinema.Person" Collapsed="true">
     <Position X="11.25" Y="2" Width="1.5" />
-    <NestedTypes>
-      <Enum Name="Cinema.Person.Advantages" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>Person.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAIAAAAAAAAAAAAAAQABAAAIAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAIAAAAAAAEABAgAAQUBAAAIAAABAAACACAAAA=</HashCode>
       <FileName>Person.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -48,7 +42,7 @@
   <Class Name="Cinema.Film" Collapsed="true">
     <Position X="4" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAgAAAACAAAAAEABAAAAQAAIAAABAAAAAAAAEAAIA=</HashCode>
+      <HashCode>AAIAgAAAACAAAAAEABAAAAQAAIAAABAAAAAAABEAAIA=</HashCode>
       <FileName>Film.cs</FileName>
     </TypeIdentifier>
   </Class>

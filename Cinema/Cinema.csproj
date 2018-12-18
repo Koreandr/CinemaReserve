@@ -98,6 +98,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Ticket.cs" />
+    <EmbeddedResource Include="FormAboutTheCinema.resx">
+      <DependentUpon>FormAboutTheCinema.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormBuyTickets.resx">
       <DependentUpon>FormBuyTickets.cs</DependentUpon>
     </EmbeddedResource>

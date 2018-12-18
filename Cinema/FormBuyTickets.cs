@@ -24,8 +24,7 @@ namespace Cinema
             HallPlace.Load();         
             HallPerson.Load();
             Film.Load();
-            Person.Load();
-            //Ticket.Load();           
+            Person.Load();                   
             PersonTicket.Load();
             SessionFilm.Load();
         }
@@ -61,10 +60,8 @@ namespace Cinema
             HallAdding.Save();
             HallPerson.Save();
             Film.Save();
-            Person.Save();
-           // Ticket.Save();           
+            Person.Save();                    
             PersonTicket.Save();
-
             SessionFilm.Save();
             
         }

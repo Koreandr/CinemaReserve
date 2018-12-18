@@ -29,3 +29,4 @@ C:\Users\Админ\Desktop\CinemaReserve\Cinema\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Админ\Desktop\CinemaReserve\Cinema\bin\Debug\Newtonsoft.Json.pdb
 C:\Users\Админ\Desktop\CinemaReserve\Cinema\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Админ\Desktop\CinemaReserve\Cinema\obj\Debug\Cinema.csproj.CopyComplete
+C:\Users\Админ\Desktop\CinemaReserve\Cinema\obj\Debug\Cinema.FormAboutTheCinema.resources
